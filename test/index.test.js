@@ -1,6 +1,7 @@
 const fs = require('fs');
 const generateLogo = require('./index');
 
+
 // Mock console.log to test its output
 console.log = jest.fn();
 
