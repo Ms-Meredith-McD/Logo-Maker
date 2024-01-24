@@ -1,3 +1,6 @@
+const shape = require('../shape.js')
+const triangle = require('../triangle.js')
+
 
 // this is an example test that should pass according to the Acceptance Criteria
 const shape = new Triangle();
