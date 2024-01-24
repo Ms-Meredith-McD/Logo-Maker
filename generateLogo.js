@@ -1,6 +1,7 @@
-const Triangle = require('./triangle.js')
-const Square = require('./square.js')
-const Circle = require('./circle.js')
+const Triangle = require('./utils/triangle.js')
+const Square = require('./utils/square.js')
+const Circle = require('./utils/circle.js')
+const fs = require('fs');
 
 
 const generateLogo = (text, textColor, shape, shapeColor) => {
