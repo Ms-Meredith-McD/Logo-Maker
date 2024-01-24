@@ -1,14 +1,16 @@
+const Triangle = require('./triangle.js')
+const Square = require('./square.js')
+const Circle = require('./circle.js')
+
+
 const generateLogo = (text, textColor, shape, shapeColor) => {
     let svgContent;
 
     // Determine the shape and generate corresponding SVG
     switch (shape) {
         case 'circle':
-            svgContent = `
-            <svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="150" cy="100" r="80" fill="${shapeColor}" />
-            <text x="150" y="125" font-size="60" text-anchor="middle" fill="${textColor}">${text}</text>
-            </svg>`;
+            let circle = new Circle(text, textColor, shapeColor);
+            svgContent = circle.render();
             break;
         case 'square':
             svgContent = `
@@ -35,3 +37,5 @@ const generateLogo = (text, textColor, shape, shapeColor) => {
 
     console.log('Generated logo.svg');
 };
+
+module.exports = generateLogo

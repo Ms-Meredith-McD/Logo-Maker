@@ -1,18 +1,8 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const generateLogo = require('./generateLogo.js')
 
-// Function to generate SVG file
-const generateLogo = (text, textColor, shape, shapeColor) => {
-    // Implement SVG generation logic here
-    const svgContent = `<svg width="300" height="200">
-    <!-- Your SVG elements based on user input -->
-    </svg>`;
 
-    // Write SVG content to logo.svg file
-    fs.writeFileSync('logo.svg', svgContent);
-
-    console.log('Generated logo.svg');
-};
 
 // Inquirer prompts
 inquirer
