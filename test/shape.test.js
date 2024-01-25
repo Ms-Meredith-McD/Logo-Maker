@@ -1,8 +1,17 @@
-const shape = require('../shape.js')
-const triangle = require('../triangle.js')
+const Shape = require('../utils/shape.js')
 
+describe( 'Shape', () => {
+    describe ('Constructor', () =>{
+        it('should create a new Shape object with the provided properties', () => {
+            const text = "MEM";
+            const textColor = "purple";
+            const shapeColor = "blue";
 
-// this is an example test that should pass according to the Acceptance Criteria
-const shape = new Triangle();
-shape.setColor("blue");
-expect(shape.render()).toEqual('<polygon points="150, 18 244, 182 56, 182" fill="blue" />');
+            const shape = new Shape(text, textColor, shapeColor);
+
+            expect(shape.text).toEqual(text);
+            expect(shape.textColor).toEqual(textColor);
+            expect(shape.shapeColor).toEqual(shapeColor);
+        });
+    });
+});
