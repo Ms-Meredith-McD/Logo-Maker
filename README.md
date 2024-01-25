@@ -14,8 +14,8 @@ After you clone the project, run nmp install.
 Open a terminal inside the folder where you have cloned the repository.
 In that command line, type "node index.js"
 
-## Screenshots
-![Alt text](logo.svg)
+## Screenshot
+![Logo](logo.svg)
 
 ## Walthrough Video
 
