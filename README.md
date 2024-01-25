@@ -15,6 +15,12 @@ Open a terminal inside the folder where you have cloned the repository.
 In that command line, type "node index.js"
 
 ## Screenshots
-
+![Alt text](logo.svg)
 
 ## Walthrough Video
+
+Please see the walkthrough video here:
+https://drive.google.com/file/d/1bvhxu12R4Fq06XaqTOyANinc25eXVprj/view
+
+If that video is too small on your computer, please follow this link:
+https://app.screencastify.com/v3/watch/LX70zrEdgOEgmflTSF80
